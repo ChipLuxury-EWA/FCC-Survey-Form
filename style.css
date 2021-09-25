@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+#my-color-template {
+    /* https://colorhunt.co/palette/1700553e00ffae00fbb5ffd9 */
+    color: #170055;
+    color: #3E00FF;
+    color: #AE00FB;
+    color: #B5FFD9;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(45deg, #B5FFD9, rgba(174, 0, 251, 0.7)), url(./images/wallpaper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #170055;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#container {
+    margin: 3.125rem auto 0.9rem auto;
+    max-width: 720px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.375rem 1.75rem 0.975rem 1.75rem;
+    /* padding-bottom: 4rem; */
+}
+
+label {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+input, select, textarea {
+    font-size: 1.4rem;
+}
+
+textarea {
+    border-radius: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    border: 3px solid #AE00FB;
+    background-color: #b000fb7c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#submit:hover {
+    background-color: #AE00FB;
+    cursor: pointer;
+}
+
+input.daw, input.fav-daw {
+    transform: scale(1.7);
+    cursor: pointer;
+    margin: 0rem 0.9rem 0rem 2rem;
+}
+
+.label-fav-daw ,.label-daw{
+    margin-top: -0.15rem;
+}
+
+span {
+    font-size: 1rem;
+}
