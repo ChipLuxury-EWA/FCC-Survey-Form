@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <H1 id="title">DAW Survey Form</H1>
+        <p id="description">some question about MPC and music softwares.</p>
+        <form action="" id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
+            <label id="number-label" for="number">Age: <span>(optional)</span></label>
+            <input type="number" name="age" id="number" placeholder="enter your age" min="10" max="99">
+            <label for="dropdown">Choose your favorite MPC model:</label>
+            <!-- dropdown -->
+            <select id="dropdown" name="MPC" required>
+                <option disabled selected="" value="">Select model</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="2000XL">2000XL</option>
+                <option value="2500">2500</option>
+                <option value="4000">4000</option>
+                <option value="5000">5000</option>
+                <option value="live">Live</option>
+                <option value="live2">Live mk2</option>
+            </select>
+            <!-- radio -->
+            <label id="fav-daw-label" for="fav-daw">Please select your favorite DAW:</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="ardour">Ardour</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="lmms">LMMS</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="sunvox">SunVox</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="abelton">Ableton Live</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="cuebase">Cubase</label>
+            <label class="label-fav-daw"><input type="radio" name="fav-daw" class="fav-daw" value="reason">Reason</label>
+            <!-- checkboxes: -->
+            <label id="daw-label" for="daw">Please select DAWs you worked with:</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="Ardour">Ardour</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="LMMS">LMMS</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="SunVox">SunVox</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="ableton-live">Ableton Live</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="cubase">Cubase</label>
+            <label class="label-daw"><input type="checkbox" name="daw" class="daw" value="reason">Reason</label>
+            <!-- text -->
+            <label for="tech">Please write down about your synth collection:</label>
+            <textarea name="tech" id="tech" cols="30" rows="10" required></textarea>
+            <!-- submit -->
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
